@@ -43,9 +43,9 @@ const UpdatePost = (props) => {
               <Form.Control
                 name="id"
                 type="number"
-                //  readOnly
+                
                  defaultValue={`${props?.info?.id}`}
-                // placeholder={`${props.info.title}`}
+           
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -73,9 +73,6 @@ const UpdatePost = (props) => {
             </Button>
           </Form>
         </div>
-        {/* <Modal.Footer>
-          <Button>Close</Button>
-        </Modal.Footer> */}
       </Modal>
     </div>
   );
