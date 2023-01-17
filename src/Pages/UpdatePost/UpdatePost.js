@@ -3,6 +3,7 @@ import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { useUpdatePostMutation } from '../../Redux/Posts/Posts';
+import { toast } from 'react-toastify';
 
 const UpdatePost = (props) => {
   const [updateInfo, response] = useUpdatePostMutation();
@@ -20,7 +21,7 @@ const UpdatePost = (props) => {
     };
 
     await updateInfo(formValue);
-    console.log(id);
+    toast("Updated Succesfully");
   };
   return (
     <div>
@@ -68,7 +69,7 @@ const UpdatePost = (props) => {
               ></textarea>
             </Form.Group>
 
-            <Button onClick={props.onHide} variant="primary" type="submit">
+            <Button onClick={props.onHide} variant="primary" type="submit" className='homeCard border-0 fw-bold w-100'>
               Submit
             </Button>
           </Form>

@@ -30,7 +30,7 @@ const AddPostForm = ( {handleAddPost }) => {
         ></textarea>
       </Form.Group>
 
-      <Button variant="primary" type="submit">
+      <Button className='homeCard fw-bold border-0 w-100' variant="primary" type="submit">
         Submit
       </Button>
     </Form>

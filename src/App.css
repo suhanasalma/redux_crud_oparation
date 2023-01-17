@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+.bg{
+  background-color: #392640;
+}
+.container{
+  background: #000;
+}
+.footerLink{
+  color: #392640;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

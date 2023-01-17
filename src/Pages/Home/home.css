@@ -1,0 +1,23 @@
+.hero{
+   background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.90)),url(../../Assets/background.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 400px;
+   font-family: 'Pacifico', cursive;
+   border-radius: 5px;
+   
+}
+
+.img{
+   width: 50px;
+   height: 50px;
+   object-fit: cover;
+   border-radius: 50%;
+}
+
+.homeCard{
+   background: linear-gradient(90deg, hsla(176, 58%, 48%, 1) 0%, hsla(44, 83%, 57%, 1) 100%);
+   
+}

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import { useAddPostMutation } from '../../Redux/Posts/Posts';
 import AddPostForm from './AddPostForm';
 
@@ -27,13 +28,13 @@ const AddPost = () => {
        console.log(title, body, id, userId);
        setFormValue({ ...formValue, title, body, id, userId });
        await addPost(formValue)
-        console.log(formValue);
+        toast("Added Succesfully")
    }
    return (
      <div>
-       <h2 className="text-center my-5">Add Post</h2>
-       <div className="w-50 mx-auto shadow p-3 mb-5 bg-body-tertiary rounded">
-         <AddPostForm handleAddPost ={handleAddPost}/>
+       <h2 className="text-center my-3 text-white fw-bold">Add Post</h2>
+       <div className="w-75 mx-auto shadow p-3 mb-5 bg-body-tertiary rounded text-white">
+         <AddPostForm handleAddPost={handleAddPost} />
        </div>
      </div>
    );
